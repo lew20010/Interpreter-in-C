@@ -971,7 +971,7 @@ void testPrintDataLinkedListe(){
     //printf("count Bedingungen %d\n", countBedingungen);
 }
 int main(void) {
-    clock_t start = clock();
+    clock_t beginn = clock();
     char pfad[1024];
 
     printf("Dateipfad eingeben: ");
@@ -1041,7 +1041,7 @@ int main(void) {
     free(daten);
     clock_t ende = clock();
 
-    double sekunden = (double)(ende - start) / CLOCKS_PER_SEC;
+    double sekunden = (double)(ende - beginn) / CLOCKS_PER_SEC;
 
     printf("Ausführungszeit: %.6f Sekunden\n", sekunden);
     return 0;
