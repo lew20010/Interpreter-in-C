@@ -1027,10 +1027,7 @@ int main(void) {
     //testPrintMethode(daten);
     //testPrintDataLinkedListe();
     countBedingungen = countBedingungen-1; //weil ich das mit dem rekursiven Aufruf nicht richtig koordiniert habe, ups
-    printf("countBedingungen %d\n", countBedingungen);
     int anzahlNeueZeilen = countLines(daten, groesse);
-
-    printf("Anzahl der Zeilenumbrueche: %d\n", anzahlNeueZeilen);
     for(int c = 0; c<=anzahlNeueZeilen; c++){
         if(c==anzahlNeueZeilen && daten != NULL){
             daten = zeileAusfuehren(daten, true);
