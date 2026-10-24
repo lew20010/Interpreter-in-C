@@ -481,8 +481,8 @@ void divisionKomma(unsigned char *data, bool integer){
         exit(1);
     }
     if(integer==false){
-    zeigerWriteTo->wert = zeigerReadOne->wert;
-    zeigerWriteTo->nenner = zeigerReadTwo->wert;
+    zeigerWriteTo->wert = zeigerReadOne->wert * zeigerReadTwo->nenner;
+    zeigerWriteTo->nenner = zeigerReadTwo->wert * zeigerReadOne->nenner;
     kuerzen(zeigerWriteTo);
     }else{
         zeigerWriteTo->wert= zeigerReadOne->wert/zeigerReadTwo->wert;
