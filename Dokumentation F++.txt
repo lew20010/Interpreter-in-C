@@ -1,0 +1,54 @@
+var:
+var a wert
+Wichtig: Wert muss eine ganze Zahl sein, rationale Zahlen lassen sich über die Division zweier ganzen Zahlen darstellen. Die Variable darf maximal 31 Zeichen lang sein
+
+add:
+add variableOne variableTwo, variableThree
+Wichtig: alle Variablen müssen zuvor mit var initialisiert werden.
+variableOne wird dabei überschrieben.
+
+sub:
+sub variableOne variableTwo, variableThree
+Wichtig: alle Variablen müssen zuvor mit var initialisiert werden.
+variableOne wird dabei überschrieben.
+
+div:
+div variableOne variableTwo, variableThree
+Wichtig: alle Variablen müssen zuvor mit var initialisiert werden.
+variableOne wird dabei überschrieben. Lässt sich variableTwo/variableThree nicht als 
+x/1 schreiben mit x∈Z, so ist variableOne Teil von Q\Z. Jede Zahl lässt sich mit jeder Zahl verrechnen, nur die Division durch 0 ist nicht möglich.
+
+divi:
+divi variableOne variableTwo, variableThree
+Wichtig: alle Variablen müssen zuvor mit var initialisiert werden.
+variableOne wird dabei überschrieben. Hierbei handelt es sich um die Integer Division, wobei gilt: variableOne = (variableTwo-(variableTwo%variableThree))/variableThree
+
+mul:
+mul variableOne variableTwo, variableThree
+Wichtig: alle Variablen müssen zuvor mit var initialisiert werden.
+variableOne wird dabei überschrieben. Die zahlen werden miteinander multipliziert.
+
+mod:
+mod variableOne variableTwo, variableThree
+Wichtig: alle Variablen müssen zuvor mit var initialisiert werden.
+variableOne wird dabei überschrieben. Hier gilt variableOne = variableTwo % variableThree.
+
+
+loop:
+loop Bedingung{
+code
+code}
+
+Bedingung: a>b, a<b, a=b, a > b, a < b, a = b
+Wichtig: Klammer auf direkt nach der Bedingung und die geschlossene direkt nach dem code. a und b müssen initialisierte Variablen sein
+
+wenn:
+wenn Bedingung{
+code
+code}
+
+Bedingung: a>b, a<b, a=b, a > b, a < b, a = b
+Wichtig: Klammer auf direkt nach der Bedingung und die geschlossene direkt nach dem code. a und b müssen initialisierte Variablen sein.
+
+In der Datei ProgrammTest ist ein Programm, welches für eine beliebige Eingabe rechnet wie viele Schritte es beim Collatz Problem braucht um die Zahl 1 zu erreichen. Sollte es zu einem Overflow kommen, wird dies vom Programm erkannt.
+

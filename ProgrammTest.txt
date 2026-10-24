@@ -1,0 +1,24 @@
+var zero 0
+var one 1
+var two 2
+var three 3
+var eingabe 500052047
+var pruef 0
+var count 0
+var vergleich 0
+loop eingabe>one{
+add vergleich eingabe zero
+add count count one
+mod pruef eingabe two
+wenn pruef = one{
+mul eingabe eingabe three
+add eingabe eingabe one
+say eingabe
+wenn vergleich>eingabe{
+say "overflow happened"
+add eingabe one zero}}
+wenn pruef=zero{
+div eingabe eingabe two
+say eingabe}}
+say count
+;
